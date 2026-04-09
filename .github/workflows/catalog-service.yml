@@ -3,7 +3,8 @@ name: Catalog Service
 on:
   push:
     paths:
-      - Catalog-Service/**
+      - 'Catalog-Service/**'
+      - '.github/workflows/catalog-service.yml'
     branches:
       - '**'
   pull_request:
