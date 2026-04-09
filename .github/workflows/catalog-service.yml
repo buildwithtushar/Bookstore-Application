@@ -5,7 +5,7 @@ on:
     paths:
       - catalog-service/**
     branches:
-      - 'main'
+      - '**'
   pull_request:
     branches: [main]
 
@@ -28,9 +28,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: 'maven'
-
-      - name: Make Maven wrapper executable
-        run: chmod +x mvnw
 
       - name: Build with Maven
         run: ./mvnw -ntp verify
