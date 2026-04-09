@@ -24,6 +24,7 @@
 
     <!-- Modules -->
     <modules>
+        <module>Catalog-Service</module>
     </modules>
 
     <!-- Build Plugins -->
