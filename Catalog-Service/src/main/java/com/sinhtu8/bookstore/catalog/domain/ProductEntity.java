@@ -19,7 +19,7 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "products")
-class ProductEntity {
+public class ProductEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "product_id_generator")
