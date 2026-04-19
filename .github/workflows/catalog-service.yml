@@ -46,9 +46,11 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          ./mvnw spring-boot:build-image -DskipTests
+          ./mvnw spring-boot:build-image \
+          -Dspring-boot.build-image.imageName=${DOCKER_IMAGE_NAME}:latest \
+          -DskipTests
 
       - name: Push Docker Image
         run: |
-          echo "Pushing the image $DOCKER_IMAGE_NAME to Docker Hub..."
-          docker push $DOCKER_IMAGE_NAME
+          echo "Pushing the image $DOCKER_IMAGE_NAME:latest to Docker Hub..."
+          docker push ${DOCKER_IMAGE_NAME}:latest
