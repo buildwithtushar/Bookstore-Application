@@ -26,7 +26,7 @@
 		<git-commit-id.version>9.0.1</git-commit-id.version>
 
 		<!-- ✅ Docker Image Name -->
-		<dockerImageName>buildwithtushar/bookstore-catalog-service</dockerImageName>
+		<dockerImageName>builldwithtushar/bookstore-catalog-service</dockerImageName>
 	</properties>
 
 	<dependencies>

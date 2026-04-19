@@ -1,7 +1,7 @@
 name: 'Bookstore-Application'
 services:
   catalog-service:
-    image: buildwithtushar/bookstore-catalog-service
+    image: builldwithtushar/bookstore-catalog-service
     container_name: catalog-service
     environment:
       - SPRING_PROFILES_ACTIVE=docker
